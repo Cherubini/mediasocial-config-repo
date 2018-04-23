@@ -6,11 +6,9 @@ spring:
   cloud:
     stream:
       bindings:
-        input:
-          destination: mediasocial
         output:
-          destination: mediasocial
-          group: comments
+          destination: mediasocial-comments
+          group: comments-service
           content-type: application/json
 
   
