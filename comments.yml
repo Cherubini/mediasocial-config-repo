@@ -13,3 +13,28 @@ spring:
           destination: mediasocial-chat
           group: comments-chat
           content-type: application/json
+logging:
+  level:
+    com:
+      cherubini: DEBUG
+    org:
+      springframework:
+        cloud: DEBUG
+        integration: DEBUG
+        data: TRACE
+    reactor:
+      core: TRACE
+      util: TRACE
+
+management:
+  endpoints:
+    web:
+      base-path: /monitor
+      exposure:
+        include: '*'
+  endpoint:
+    info:
+      git:
+        mode: full
+    health:
+      show-details: always   
