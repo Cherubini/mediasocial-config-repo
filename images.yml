@@ -2,13 +2,15 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-
 spring:
   cloud:
     stream:
       bindings:
+        input:
+          destination: mediasocial
         output:
-          destination: learning-spring-boot-comments
-          group: comments-service
+          destination: mediasocial
+          group: comments
           content-type: application/json
+
   
