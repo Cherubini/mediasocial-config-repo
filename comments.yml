@@ -6,10 +6,10 @@ spring:
     stream:
       bindings:
         input:
-          destination: learning-spring-boot-comments
+          destination: mediasocial-comments
           group: comments-service
           content-type: application/json
         output:
-          destination: learning-spring-boot-chat
+          destination: mediasocial-chat
           group: comments-chat
           content-type: application/json
