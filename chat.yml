@@ -9,10 +9,6 @@ spring:
           destination: mediasocial-chat
           group: comments-chat
           content-type: application/json
-        newComments:
-          destination: mediasocial-chat
-          group: comments-chat
-          content-type: application/json
         clientToBroker:
           destination: mediasocial-chat-user-messages
           group: app-chatMessages
