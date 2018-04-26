@@ -31,10 +31,10 @@ logging:
       springframework:
         cloud: DEBUG
         integration: DEBUG
-        data: TRACE
+        data: DEBUG
     reactor:
-      core: TRACE
-      util: TRACE
+      core: DEBUG
+      util: DEBUG
 
 management:
   endpoints:
