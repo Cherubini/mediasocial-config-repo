@@ -1,5 +1,10 @@
 server:
   port: 9000
+  
+security:
+  sessions: never
+  user:
+    password: password
 
 eureka: 
   client: 
