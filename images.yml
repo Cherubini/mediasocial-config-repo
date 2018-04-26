@@ -1,5 +1,15 @@
 server:
   port: 8200
+
+# tag::security[]
+security:
+  sessions: never
+# end::security[]
+
+# tag::ribbon[]
+images:
+  commentsUser: user
+  commentsPassword: password
   
 eureka: 
   client: 
