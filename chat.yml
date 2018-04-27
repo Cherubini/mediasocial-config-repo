@@ -53,22 +53,22 @@ spring:
         - Path=/css/bootstrap.min.css
         filters: 
         - SaveSession 
-      - id: bootstrapJs 
-        uri: lb://IMAGES 
-        predicates: 
-        - Path=/js/bootstrap.min.js
-        filters: 
-        - SaveSession 
       - id: jqueryJs 
         uri: lb://IMAGES 
         predicates: 
-        - Path=/js/jquery-3.3.1.js
+        - Path=/js/jquery.js
         filters: 
         - SaveSession 
       - id: popperJs 
         uri: lb://IMAGES 
         predicates: 
         - Path=/js/popper.min.js
+        filters: 
+        - SaveSession 
+      - id: bootstrapJs 
+        uri: lb://IMAGES 
+        predicates: 
+        - Path=/js/bootstrap.min.js
         filters: 
         - SaveSession 
       - id: commentsService 
