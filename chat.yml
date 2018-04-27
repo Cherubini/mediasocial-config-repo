@@ -44,13 +44,13 @@ spring:
       - id: mainCss 
         uri: lb://IMAGES 
         predicates: 
-        - Path=/css/main.css 
+        - Path=/main.css 
         filters: 
         - SaveSession 
       - id: bootstrapCss 
         uri: lb://IMAGES 
         predicates: 
-        - Path=/css/bootstrap.min.css
+        - Path=/bootstrap.min.css
         filters: 
         - SaveSession 
       - id: commentsService 
